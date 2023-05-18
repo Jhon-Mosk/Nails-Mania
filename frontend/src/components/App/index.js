@@ -1,7 +1,7 @@
 import "./App.css";
 import styled from "styled-components";
-import Button from "@mui/material/Button";
 import { Container } from "@mui/material";
+import MainButton from "../Button";
 
 const Header = styled.div`
     height: 100vh;
@@ -13,6 +13,8 @@ const Header = styled.div`
         url("./img/header_back.jpg") no-repeat;
     background-size: cover;
 `;
+
+const Logo = styled.div``;
 
 // const Container = styled.div`
 //     height: 100vh;
@@ -36,11 +38,15 @@ function App() {
     return (
         <div className="App">
             <Header>
-                <Container style={{ background: "green" }} maxWidth={"lg"}>
-                    <span>Natalia.Krichuk</span>
-                    <p>+7(902)192-23-81</p>
+                <Container style={{ background: "lightGreen" }} maxWidth={"lg"}>
+                    <div>
+                        <Logo>
+                            <span>Natalia.Krichuk</span>
+                        </Logo>
+                        <p>+7(902)192-23-81</p>
+                    </div>
                     <div>Кабинет маникюра Вычегодский</div>
-                    <Button>Записаться</Button>
+                    <MainButton>Записаться</MainButton>
                 </Container>
             </Header>
         </div>
