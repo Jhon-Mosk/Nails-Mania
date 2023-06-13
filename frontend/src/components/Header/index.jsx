@@ -2,6 +2,7 @@ import { styled } from "@mui/material/styles";
 import { Box, Container, Stack } from "@mui/material";
 import MainButton from "../Button";
 import { common, yellow } from "@mui/material/colors";
+import Logotype from "../Logotype";
 
 const Back = styled(Box)(({ theme }) => ({
     height: "100vh",
@@ -21,12 +22,6 @@ const CustomContainer = styled(Container)(({ theme }) => ({
     flexDirection: "column",
     alignContent: "center",
     justifyContent: "space-between",
-}));
-
-const Logo = styled(Box)(({ theme }) => ({
-    background: 'url("./img/icons/logo.svg")',
-    width: "150px",
-    height: "87px",
 }));
 
 const LogoText = styled(Box)(({ theme }) => ({
@@ -63,7 +58,7 @@ export default function Header() {
             <CustomContainer disableGutters={true} maxWidth={"lg"}>
                 <Stack direction="row" justifyContent="space-between" alignItems="center">
                     <Stack direction="row" alignItems="center" spacing={2}>
-                        <Logo />
+                        <Logotype />
                         <LogoText>Nails-Mania</LogoText>
                     </Stack>
                     <Phone>+7(902)192-23-81</Phone>
